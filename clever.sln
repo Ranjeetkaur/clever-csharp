@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clever-csharp", "clever-csharp\clever-csharp.csproj", "{4FF7E71E-70AC-419B-964F-0ED5BF260AF5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clever-csharp", ".net4.0\clever-csharp\clever-csharp.csproj", "{4FF7E71E-70AC-419B-964F-0ED5BF260AF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clever.tests", "clever.tests\clever.tests.csproj", "{66826F6E-886B-440B-B9DB-E92D2C58F838}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clever.tests", ".net4.0\clever.tests\clever.tests.csproj", "{66826F6E-886B-440B-B9DB-E92D2C58F838}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clever-csharp-async", ".net4.5\clever-csharp-async\clever-csharp-async.csproj", "{0E5B473B-7BB8-4037-BEA5-5C36FB633FCF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".net4.0", ".net4.0", "{93739A50-BFCC-461C-81E8-8A1977CA14D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".net4.5", ".net4.5", "{73EDBB41-F4A1-4ACC-B3E9-5E3D657A4981}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +27,17 @@ Global
 		{66826F6E-886B-440B-B9DB-E92D2C58F838}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66826F6E-886B-440B-B9DB-E92D2C58F838}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66826F6E-886B-440B-B9DB-E92D2C58F838}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E5B473B-7BB8-4037-BEA5-5C36FB633FCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E5B473B-7BB8-4037-BEA5-5C36FB633FCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E5B473B-7BB8-4037-BEA5-5C36FB633FCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E5B473B-7BB8-4037-BEA5-5C36FB633FCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4FF7E71E-70AC-419B-964F-0ED5BF260AF5} = {93739A50-BFCC-461C-81E8-8A1977CA14D7}
+		{66826F6E-886B-440B-B9DB-E92D2C58F838} = {93739A50-BFCC-461C-81E8-8A1977CA14D7}
+		{0E5B473B-7BB8-4037-BEA5-5C36FB633FCF} = {73EDBB41-F4A1-4ACC-B3E9-5E3D657A4981}
 	EndGlobalSection
 EndGlobal

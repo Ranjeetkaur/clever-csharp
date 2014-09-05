@@ -1,2 +1,1 @@
-A strongly typed c# wrapper around the clever.com REST api. 
-==
+A  c# wrapper around the happy REST api
