@@ -43,8 +43,13 @@ namespace clever_csharp_async
 
         public async Task<T> Post<T>(Uri queryUri, string content)
         {
-            var result =  await PostAsync(queryUri, new StringContent(content));
-            return JsonConvert.DeserializeObject<T>(await result.Content.ReadAsStringAsync());
+            var result = _client.PostAsync(queryUri, new StringContent(content, Encoding.UTF8, "application/json"))
+                .ContinueWith(
+                    response => 
+                        JsonConvert.DeserializeObject<T>(response.Result.Content.ReadAsStringAsync().Result)
+                 );
+
+            return result.Result;
         }
 
         public async Task<T> Get<T>(Uri queryUri)
